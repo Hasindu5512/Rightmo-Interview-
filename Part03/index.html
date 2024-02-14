@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="bumblebee">
+
+<head>
+    <meta charset="utf-8">
+    <title>Todolist</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="overlay"></div>
+
+        <div id="addTaskPopup">
+            <h1 for="taskInput">Add Task</label><br>
+            <h3>Task</h3>
+            <input type="text" id="taskInput"><br><br>
+
+            <div>
+                <br><br><button onclick="" class="button" id="button1">High</button>
+                <button onclick="" class="button" id="button2">Medium</button>
+                <button onclick=""class="button" id="button3">Low</button><br><br>
+            </div>
+
+            <button onclick="addTask()">Add Task</button>
+            <button onclick="closePopup()">Cancel</button>
+        </div>
+
+        <h1>Task List</h1>
+        <button onclick="openPopup()"> + Add Task</button><br>
+
+
+    </div>
+
+    <ul id="taskList"></ul>
+
+
+<script src="script.js"></script>   
+</body>
+
+</html>

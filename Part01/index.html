@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <tr>Status
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Title</label><label class="validation-error hide" id="titleValidationError">This field is required.</label>
+                        <input type="text" name="title" id="title">
+                    </div>
+                    <div>
+                        <label>Priority</label><label class="validation-error hide" id="titleValidationError1">This field is required.</label>
+                        <input type="text" name="Priority" id="Priority">
+                    </div>
+                    <div>
+                        <label>Status</label><label class="validation-error hide" id="titleValidationError2">This field is required.</label>
+                        <input type="text" name="status" id="status">
+                    </div>
+                    <div>
+                        <label>Date</label>
+                        <input type="text" name="date" id="date" >
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="tableList">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
